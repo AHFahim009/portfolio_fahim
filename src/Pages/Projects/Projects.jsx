@@ -10,7 +10,7 @@ const Projects = () => {
         </span>
       </h1>
 
-      <section className="grid  md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-5 lg:px-12 px-4 py-8 ">
+      <section className="grid   lg:grid-cols-3 justify-center items-center gap-5 lg:px-12 px-4 py-12 ">
         {projects.map((p) => (
           <>
             <ProjectsDisplay key={p.id} project={p} />

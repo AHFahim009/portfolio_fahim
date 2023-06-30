@@ -16,9 +16,13 @@ const ProjectsDisplay = ({ project }) => {
   };
 
   return (
-    <div className="card card-compact w-96 shadow-xl">
-      <figure className=" h-[400px]">
-        <img className=" object-cover " src={project.image} alt="Shoes" />
+    <div className="card card-compact w-full  shadow-xl">
+      <figure className=" h-[300px] p-4 rounded-lg">
+        <img
+          className=" object-cover rounded-lg "
+          src={project.image}
+          alt="Shoes"
+        />
       </figure>
       <div className="card-body shadow-2xl text-gray-300 ">
         <h2 className="card-title">{project.name}</h2>
@@ -29,7 +33,7 @@ const ProjectsDisplay = ({ project }) => {
         >
           {showFull ? detail : getShortText(detail)}
         </p>
-        <div className="card-actions justify-start mt-2">
+        <div className="card-actions justify-start mt-6">
           <a className="btn btn-xs  bg-purple-900 text-white ">View Code</a>
           <a
             href={project.preview}
